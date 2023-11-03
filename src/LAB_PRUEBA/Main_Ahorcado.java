@@ -1,5 +1,7 @@
-package pruebalab1;
+package LAB_PRUEBA;
 
+import LAB_PRUEBA.JuegoAhorcadoFijo;
+import LAB_PRUEBA.JuegoAhorcadoAzar;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
@@ -41,7 +43,7 @@ public class Main_Ahorcado extends JFrame{
         boton2.addMouseListener(new MouseAdapter() {
         @Override
         public void mousePressed(MouseEvent e) {
-        JuegoAhorcadoAzar azar = new JuegoAhorcadoAzar(palabrasPosibles);
+        JuegoAhorcadoAzar azar = new JuegoAhorcadoAzar();
         azar.jugar();
             }
         });
