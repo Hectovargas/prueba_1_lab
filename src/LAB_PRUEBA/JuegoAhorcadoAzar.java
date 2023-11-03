@@ -53,6 +53,7 @@ public final class JuegoAhorcadoAzar extends JuegoAhorcadoBase {
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setBackground(Color.LIGHT_GRAY);
+        
         JPanel panel = new JPanel();
         panel.setSize(600,600);
         panel.setBackground(Color.LIGHT_GRAY);
@@ -65,6 +66,11 @@ public final class JuegoAhorcadoAzar extends JuegoAhorcadoBase {
         text.setBounds(300, 100, 50, 50);
         panel.add(text);
         panel.add(label);
+        JLabel titulo = new JLabel("Ahorcado Azar");
+        titulo.setBounds(200, 30, 200, 50);
+        titulo.setForeground(Color.BLACK);
+        titulo.setFont(new Font("Arial",0,28));
+        panel.add(titulo);
         JButton boton = new JButton("verificar");
         boton.setBounds(200, 450 ,200,50 );
         //

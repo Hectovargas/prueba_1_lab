@@ -47,6 +47,11 @@ public class JuegoAhorcadoFijo extends JuegoAhorcadoBase {
         panel.add(label);
         JButton boton = new JButton("verificar");
         boton.setBounds(200, 450 ,200,50 );
+        JLabel titulo = new JLabel("Ahorcado Fijo");
+        titulo.setBounds(200, 30, 200, 50);
+        titulo.setForeground(Color.BLACK);
+        titulo.setFont(new Font("Arial",0,28));
+        panel.add(titulo);
         //
         JTextArea descripcion = new JTextArea();
         descripcion.setText(palabraActual);

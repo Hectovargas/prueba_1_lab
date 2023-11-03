@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 public class Main_Ahorcado extends JFrame{
     public Main_Ahorcado(){
-        setSize(600,600);
+        setSize(600,400);
         setLocationRelativeTo(null);
         setBackground(Color.DARK_GRAY);
         menu();
@@ -24,11 +24,16 @@ public class Main_Ahorcado extends JFrame{
         label.setFont(new Font("Arial", 0, 28));
         label.setForeground(Color.WHITE);
         JPanel menu = new JPanel();
-        menu.setSize(600, 600);
+        menu.setSize(600, 500);
         menu.setLayout(null);
         menu.setBackground(Color.darkGray);
         JButton boton = new JButton("Ahorcado Fijo");
         boton.setBounds(200, 100 ,200,50 );
+       
+        boton.setBackground(Color.BLUE);
+        boton.setForeground(Color.WHITE);
+        boton.setFont(new Font("Arial", Font.BOLD, 16));
+        
         boton.addMouseListener(new MouseAdapter() {
         @Override
         public void mousePressed(MouseEvent e) {
@@ -40,6 +45,10 @@ public class Main_Ahorcado extends JFrame{
         
         JButton boton2 = new JButton("Ahorcado Azar");
         boton2.setBounds(200, 200 ,200,50 );
+        
+        boton2.setBackground(Color.RED);
+        boton2.setForeground(Color.WHITE);
+        boton2.setFont(new Font("Arial", Font.BOLD, 16));
         boton2.addMouseListener(new MouseAdapter() {
         @Override
         public void mousePressed(MouseEvent e) {
